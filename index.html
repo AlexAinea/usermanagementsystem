@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Management System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>CREATE USERS</h1>
+    <label for="nameinput">Name:</label>
+    <input type="text" name="name" id="nameinput">
+    <label for="emailinput">Email:</label>
+    <input type="email" name="email" id="emailinput"><br>
+    <button id="create">Create User </button><br>
+    <button id="list">List Users </button><br>
+    <h1>LIST OF USERS</h1>
+    <ol id="userlist">
+
+    </ol>
+    <h1>SEARCH USERS</h1>
+    <label for="namesearch">Name:</label>
+    <input type="text" name="name" id="namesearch"><br>
+    <button id="search">Search by Name</button><br>
+    <ul id="userListSearched">
+
+    </ul>
+    <h1>DELETE USERS</h1>
+    <label for="deleteuser">Enter index to delete:</label>
+    <input type="text" id="deleteuser">
+    <p><small><i>(number 1 is index 0)</i></small></p>
+    <p><small><i>RELIST USERS TO SEE CHANGES</i></small></p>
+    <button id="delete">Delete user</button>
+    
+    <h1>UPDATE USERS</h1>
+    <label for="nametobeupdated">Enter Name to be Updated:</label>
+    <input type="text" name="nametobeupdated" id="nametobeupdated">
+    <label for="newName">Enter New Name:</label>
+    <input type="text" name="newName" id="newName">
+    <label for="newEmail">Enter New Email:</label>
+    <input type="text" name="newEmail" id="newEmail">
+    <button id="updateuser">Update</button>
+
+    <script src="app.js"></script>
+</body>
+</html>
